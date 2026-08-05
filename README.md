@@ -28,14 +28,14 @@ GitHub Actions 实现 `酷狗概念VIP` 自动签到，每天领取总计 `两�
 > **常见错误**：
 > 
 > 执行签到报错未配置，为`PAT`秘钥权限设置问题，需正确设置`PAT Secret`权限并再次执行登录，**Repository secrets**处除了配置的**PAT Secret**外，成功写入**USERINFO**即可正常执行签到
->
->[点击跳转至PAT Secret图文](https://github.com/qfmc7040/KGM-AUTO-CHECKIN#secret-%E4%BD%8D%E7%BD%AE)
 > 
 > **即 先确保权限无误`Only select Repository`仅选中所需仓库**
 > 
 > **权限①：`Metadata` 保持只读**
 > 
 > **权限②：`Secrets` 设置为读写**
+> 
+> >[点击跳转至PAT Secret图文](https://github.com/qfmc7040/KGM-AUTO-CHECKIN#secret-%E4%BD%8D%E7%BD%AE)
 > 
 > **在仓库`Settings`设置`PAT Secret`，再执行登录 确保`Secrets and variables` - `Actions`中成功写入`USERINFO`再执行签到**
 

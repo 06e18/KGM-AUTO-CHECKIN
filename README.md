@@ -35,8 +35,6 @@ GitHub Actions 实现 `酷狗概念VIP` 自动签到，每天领取总计 `两�
 > 
 > **权限②：`Secrets` 设置为读写**
 > 
-> >[点击跳转至PAT Secret图文](https://github.com/qfmc7040/KGM-AUTO-CHECKIN#secret-%E4%BD%8D%E7%BD%AE)
-> 
 > **在仓库`Settings`设置`PAT Secret`，再执行登录 确保`Secrets and variables` - `Actions`中成功写入`USERINFO`再执行签到**
 
 <details>
@@ -62,7 +60,7 @@ GitHub Actions 实现 `酷狗概念VIP` 自动签到，每天领取总计 `两�
       **Repository permissions (仓库权限)**：`Metadata` 保持只读，`Secrets` 设置为读写
       ![精细化个人访问令牌权限](imgs/精细化个人访问令牌权限.png)
    - 滑动到底部，点击绿色的 Generate token 保存按钮
-   - 复制生成的字符串，回到本仓库添加到`Secret`，变量名 `PAT`，value 为复制的令牌
+   - 复制生成的字符串，回到本仓库添加到[Secret](https://github.com/qfmc7040/KGM-AUTO-CHECKIN#secret-%E4%BD%8D%E7%BD%AE)，变量名 `PAT`，value 为复制的令牌
 
 1. 登录（两种独立的登录方式，任选其一）
 

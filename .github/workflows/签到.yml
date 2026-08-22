@@ -2,21 +2,15 @@ name: 签到
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '10 17 * * *'
 permissions:
   contents: read
+  actions: write
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 30
     steps:
-      - name: 随机延迟（仅定时触发，落在北京时间 08:00-10:00）
-        if: ${{ github.event_name == 'schedule' }}
-        run: |
-          DELAY=$(( RANDOM % 121 ))
-          echo "随机延迟 ${DELAY} 分钟，预计北京时间 08:00 后约 ${DELAY} 分触发签到"
-          sleep ${DELAY}m
-
       - name: 检出仓库
         uses: actions/checkout@v5
 
@@ -57,6 +51,7 @@ jobs:
           USERINFO: ${{ secrets.USERINFO }}
           PAT: ${{ secrets.PAT }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          # 通知渠道
           WECOM_BOT_KEY: ${{ secrets.WECOM_BOT_KEY }}
           DINGTALK_BOT_KEY: ${{ secrets.DINGTALK_BOT_KEY }}
           DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}

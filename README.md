@@ -1,5 +1,5 @@
 # 酷狗概念版签到
-【在原项目基础上对齐 KuGouMusicApi v1.5.1】
+【对齐上游 KuGouMusicApi v1.6.0】
 
 GitHub Actions 实现 `酷狗概念VIP` 自动签到，每天领取总计 `两天酷狗概念VIP`
 
